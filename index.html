@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0 ;
+            box-sizing: border-box ;
+        }
+
+    body{
+           background: linear-gradient(rgb(68, 0, 255)) fixed;
+           padding:50px;
+            
+        }
+.card-container{
+        display: flex;
+        justify-content: center;
+    align-items: center; 
+    gap: 15px;
+    flex-wrap: wrap;
+    }
+     
+.card{
+    width:250px ;
+    height: auto;
+    background:aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+transition: all .3s ease-in ;
+}
+.card > *{
+    padding: 10px;
+}
+.card .card-image{
+height: 150px;
+width: 150px;
+border: 5px double pink;
+border-radius: 50%;
+background-position: center center;
+background-size:cover ;
+}
+.card  .card-title{
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px blue;
+}
+.card:nth-child(1) .card-image{
+    background-image:url(https://cdn.prod.website-files.com/61f7efd44d01cc87c88dc6f3/6318e2916ddc28d60d89d319_Coding%20Vs.%20Programming%2002.jpg) ;
+}
+.card:nth-child(2) .card-image{
+    background-image:url(https://img.freepik.com/free-photo/side-view-cook-making-delicious-pasta_23-2150690631.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726012800&semt=ais_hybrid) ;
+}
+.card:nth-child(3) .card-image{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4dHqWnBJXavm1tBHpR-s3FbUzbM-dpZLag&s) ;
+}
+.card:hover{
+    background-color: pink;
+}
+.card .card-text{
+    line-height: 20px;
+}
+    </style>
+</head>
+<body>
+   <div class="card-container">
+    <div class="card">
+    <div class="card-image"></div>
+    <div class="card-title">coding</div>
+    <div class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum a, consequuntur et ut labore, assumenda at sunt dolorum, eius quia cumque. Libero culpa, enim voluptas quidem consequatur suscipit inventore ut.
+    </div>
+   </div>
+   <div class="card">
+   <div class="card-image"></div>
+    <div class="card-title">cooking</div>
+    <div class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum a, consequuntur et ut labore, assumenda at sunt dolorum, eius quia cumque. Libero culpa, enim voluptas quidem consequatur suscipit inventore ut.
+    </div>
+   </div>
+   <div class="card">
+   <div class="card-image"></div>
+    <div class="card-title">cycling</div>
+    <div class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum a, consequuntur et ut labore, assumenda at sunt dolorum, eius quia cumque. Libero culpa, enim voluptas quidem consequatur suscipit inventore ut.
+    </div>
+   </div>
+   </div>
+</div><br><br> <center>
+<h1>FLEXBOX CSS</h1></center>
+</body>
+</html>
